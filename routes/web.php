@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -30,3 +31,9 @@ Route::get('password',[UserController::class,'password'])-> name('password');
 // Route::get('logout',[UserController::class,'logout'])-> name('logout');
 Route::get('dashboard',[DashboardController::class,'data'])-> name('dashboard');
 
+
+// Admin route
+Route::prefix('/admin')->group(function(){
+    Route::get('/', [AdminController::class, 'lists'])->name('admin.home');
+
+});
