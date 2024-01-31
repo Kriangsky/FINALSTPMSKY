@@ -1,0 +1,114 @@
+/* * mewakili semua element didalam html  */
+* {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    /* border: red solid 1px; */
+    width: 100%;
+    height: 100vh;
+    
+    /* rumus centering (membuat isi dalamnya center semua)*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login-card {
+    /* border: green solid 1px; */
+    /* 40% dari size nya container */
+    height : 550px;
+    width: 1000px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* melengkungkan sudut */
+    border-radius: 10px;
+
+    /* buat jadi vertical karna efek dari display flex jadi horizontal 
+        makanya mau di verticalkan dengan cara flex-direction: column;
+    */
+    flex-direction: column;
+}
+
+.login-card .title{
+    color: white;
+
+    /* mengatur posisi text  */
+    text-align: center;
+    margin: 0;
+    /* ngebuat ada margin dibagian atas (biasanya
+        dipake utk ngatur posisi secara manual)
+    */
+    /* margin-top: 100px; */
+    /* mengatur ketebalan font */
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.email-section {
+    width: 450px;
+    height: 25%;
+}
+
+.password-section {
+    width: 450px;
+    height: 25%;
+}
+
+input {
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 17px;
+    color:black;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.login-button button {
+    height: 40px;
+    width: 150px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 30px;
+    border-color: blue;
+}
+
+.change-to-register p {
+    font-weight: bold;
+}
+
+.change-to-register p a {
+    color: lightskyblue;
+}
+
+
+.alert-danger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.alert-danger p{
+    color: red;
+    /* background-color: #f8d7da; */
+    font-size: 18px;
+    font-weight: bold;
+    border-color: #f5c6cb;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+
+
